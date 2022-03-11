@@ -1,0 +1,163 @@
+{
+	"id": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49",
+	"createdAt": "2022-02-11T09:11:06.044Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"testServers": [
+			{
+				"url": "https://planet9dev.neptune-software.com:8081",
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVmMjE0MDhmLWY4NjEtNDkxOC1iNjg3LTM3M2Q3ZjA4OGY3NyIsInV1aWQiOiJmYWI3ZDFjMS05NGIwLTQxY2YtYWEyZi1lYWFhODU4NmZmNjEiLCJpYXQiOjE2NDY5ODg0MjUsImV4cCI6MTY1NTYyODQyNX0.OOPnFfQUlRSE5K0_Im7j5B7PdQvFkhuwkufrm0DMmrU"
+			}
+		],
+		"remote": "https://github.com/thorsten-wolf-neptune/abap-low-code.git",
+		"packageJSON": "",
+		"testAPI": [
+			{
+				"id": "9756523c-65dc-4452-bc78-236dcc29818c",
+				"apiid": "6aef0969-cb0f-4da7-b05a-8c0051f4a629",
+				"operid": "401fe63c-9277-4e45-f3f0-d425fc627a0c",
+				"enabled": true,
+				"_data": {
+					"parameters": {},
+					"headers": {},
+					"body": {
+						"result": 4
+					}
+				},
+				"testName": "Calculate 2 + 2 ",
+				"statusCode": "",
+				"jestMaxRuntime": null,
+				"jestMatchName": "req.data",
+				"jestMatchOperation": "toBe",
+				"jestMatchValue": ""
+			}
+		]
+	},
+	"name": "abap_low_code",
+	"description": "ABAP Low Code Project with Lars Hvam Petersen",
+	"ver": "22.3.11.851",
+	"enableCICD": true,
+	"apps": [],
+	"api": [
+		{
+			"id": "6aef0969-cb0f-4da7-b05a-8c0051f4a629",
+			"name": "calculator",
+			"ver": "22.2.24.918",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "3a9a9d18-86b2-4a25-81b8-a2893f9500de",
+			"name": "c1_string_concat",
+			"ver": "22.2.18.154",
+			"description": "c1_string_concat",
+			"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf"
+		},
+		{
+			"id": "a92bbd10-2281-4f5f-96fe-71028b9fdaee",
+			"name": "c1_number_add",
+			"ver": "22.2.18.1511",
+			"description": "c1_number_add",
+			"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf"
+		},
+		{
+			"id": "49593908-62ab-4ec5-bfce-e6cc224c5db7",
+			"name": "c1_number_add_object",
+			"ver": "22.2.18.1621",
+			"description": null,
+			"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf"
+		},
+		{
+			"id": "97f98dd9-69ee-491f-897c-e21aecd686c4",
+			"name": "c1_string_concat_object",
+			"ver": "22.2.18.1621",
+			"description": null,
+			"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf"
+		},
+		{
+			"id": "1af7b3b1-e029-4277-aae4-17c382721c41",
+			"name": "c1_string_concat_table",
+			"ver": "22.2.18.1647",
+			"description": null,
+			"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf"
+		}
+	],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [
+		{
+			"id": "ab0b216f-4f39-48b4-8dd6-7e11680c1e0d",
+			"name": "zcl_calculator.clas.abap",
+			"ver": "22.2.24.1151",
+			"description": null,
+			"jsscriptGroup": "d81aa165-1ce9-45d4-a355-7b4d8ca84085"
+		},
+		{
+			"id": "d0fe9fd3-69d2-47d8-bda3-4f8660ccbc2e",
+			"name": "addNumbers",
+			"ver": "22.2.24.150",
+			"description": null,
+			"jsscriptGroup": "d81aa165-1ce9-45d4-a355-7b4d8ca84085"
+		},
+		{
+			"id": "1f44e0e3-d21a-4767-a2d3-a3d4dcf73eb4",
+			"name": "zif_calculator.intf.abap",
+			"ver": "22.2.24.926",
+			"description": null,
+			"jsscriptGroup": "d81aa165-1ce9-45d4-a355-7b4d8ca84085"
+		},
+		{
+			"id": "27b676f5-0cb0-44ec-bfb7-a3e4c9df74a7",
+			"name": "debiats",
+			"ver": "22.2.24.1558",
+			"description": null,
+			"jsscriptGroup": "d81aa165-1ce9-45d4-a355-7b4d8ca84085"
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "d81aa165-1ce9-45d4-a355-7b4d8ca84085",
+			"name": "abap_low_code",
+			"description": null,
+			"ver": "22.2.24.916"
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [
+		{
+			"id": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf",
+			"name": "abap_low_code",
+			"description": "ABAP Low Code Project with Lars Hvam Petersen"
+		}
+	],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [
+		{
+			"id": "a04af34c-6927-4649-aacf-d519c8bc4466",
+			"name": "abap_low_code",
+			"description": null
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [
+		{
+			"id": "de5832b6-2ee7-4c33-9500-8f5e2d1d17cd",
+			"name": "abap_low_code",
+			"description": "ABAP Low Code Project with Lars Hvam Petersen"
+		}
+	],
+	"script_scheduler": [],
+	"connector": []
+}

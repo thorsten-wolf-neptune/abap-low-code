@@ -1,0 +1,166 @@
+{
+	"id": "6aef0969-cb0f-4da7-b05a-8c0051f4a629",
+	"createdAt": "2022-02-04T13:33:20.492Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "401fe63c-9277-4e45-f3f0-d425fc627a0c",
+			"method": "POST",
+			"path": "/addNumbers",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [
+						{
+							"name": "x-execution-time",
+							"description": "",
+							"value": "",
+							"example": "",
+							"required": false
+						}
+					],
+					"body": [],
+					"content": [
+						{
+							"id": "7282fd38-ab85-4d38-ad63-3528e89d1584",
+							"name": "addNumbersResponse",
+							"objectType": "object"
+						}
+					]
+				},
+				{
+					"status": "400",
+					"description": "Not OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "d7a09da5-027c-4431-f5db-c536d6299b8e",
+							"name": "",
+							"objectType": "string"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "addNumbersRequest",
+					"objectType": "object"
+				}
+			],
+			"serverScript": "d0fe9fd3-69d2-47d8-bda3-4f8660ccbc2e",
+			"tags": "",
+			"example": [
+				"==OBJECT STRING==",
+				"{\r",
+				"  \"number1\": \"2\",\r",
+				"  \"number2\": \"2\"\r",
+				"}"
+			]
+		}
+	],
+	"definitions": [
+		{
+			"id": "723f16a5-2404-4b96-c1d2-463903eb1c4c",
+			"name": "addNumbersRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "51639744-61df-4c76-c95a-7def5aee54f9",
+					"name": "number1",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "01dd7fb7-af2b-4ab3-fce6-3b04fc49bf35",
+					"name": "number2",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "5359601a-1b34-4738-a404-7892a75e947d",
+			"name": "addNumbersResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "cc7a03b9-dedd-43b0-f4ca-ba60d4a87c38",
+					"name": "result",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "calculator",
+	"endpoint": "/public/serverscript/calculator",
+	"ver": "22.2.24.918",
+	"version": "",
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": true,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

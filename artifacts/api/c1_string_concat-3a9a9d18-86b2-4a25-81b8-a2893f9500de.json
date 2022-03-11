@@ -1,0 +1,147 @@
+{
+	"id": "3a9a9d18-86b2-4a25-81b8-a2893f9500de",
+	"createdAt": "2022-02-18T15:04:36.327Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "fbb1cb7e-50ef-46e3-e5bc-90efc9158178",
+			"method": "POST",
+			"path": "/test",
+			"description": "",
+			"parameters": [
+				{
+					"name": "separator",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "fd264f02-1723-44c7-c5e6-ec90f87298d1",
+							"name": "POSTtestResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "POSTtestRequest",
+					"objectType": "object"
+				}
+			],
+			"serverScript": "d0fe9fd3-69d2-47d8-bda3-4f8660ccbc2e"
+		}
+	],
+	"definitions": [
+		{
+			"id": "f506b657-fe27-480d-f6e2-0dd74f4f4f8d",
+			"name": "POSTtestRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "741f1954-6b42-4e7c-862a-d5ee2a64af3f",
+					"name": "string1",
+					"objectType": "string",
+					"description": "string1 to concatenate",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "567c7661-73e3-4573-e0bf-e99be864e9df",
+					"name": "string2",
+					"objectType": "string",
+					"description": "string2 to concatenate",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "912863d4-c479-49a5-8a5b-08889fc85dc1",
+			"name": "POSTtestResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "0851c60d-874f-4f2f-9fd0-7305cf3b7c87",
+					"name": "result",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "c1_string_concat",
+	"endpoint": "/api/serverscript/c1_string_concat",
+	"ver": "22.2.18.154",
+	"version": null,
+	"description": "c1_string_concat",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49",
+	"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf",
+	"apiFormat": 1,
+	"roles": []
+}

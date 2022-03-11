@@ -1,0 +1,33 @@
+{
+	"id": "ab0b216f-4f39-48b4-8dd6-7e11680c1e0d",
+	"createdAt": "2022-02-04T15:03:25.365Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "zcl_calculator.clas.abap",
+	"ver": "22.2.24.1151",
+	"description": null,
+	"content": [
+		"==OBJECT STRING==",
+		"CLASS zcl_calculator DEFINITION PUBLIC.\r",
+		"  PUBLIC SECTION.\r",
+		"    INTERFACES zif_calculator.\r",
+		"ENDCLASS.\r",
+		"\r",
+		"CLASS zcl_calculator IMPLEMENTATION.\r",
+		"\r",
+		"  METHOD zif_calculator~_addnumbers.\r",
+		"    return_data-result = body-number1 + body-number2. \r",
+		"  ENDMETHOD.\r",
+		"\r",
+		"ENDCLASS."
+	],
+	"useAsGlobalScript": false,
+	"isTypescript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"jsscriptGroup": "d81aa165-1ce9-45d4-a355-7b4d8ca84085",
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49"
+}

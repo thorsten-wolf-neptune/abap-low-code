@@ -1,0 +1,21 @@
+{
+	"id": "de5832b6-2ee7-4c33-9500-8f5e2d1d17cd",
+	"createdAt": "2022-02-11T09:10:49.078Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"name": "abap_low_code",
+	"description": "ABAP Low Code Project with Lars Hvam Petersen",
+	"ver": "22.2.11.914",
+	"parent": null,
+	"isExternal": false,
+	"idpSource": "local",
+	"idpSourceId": null,
+	"idpSourceKey": null,
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49",
+	"roles": [
+		{
+			"id": "a04af34c-6927-4649-aacf-d519c8bc4466",
+			"name": "abap_low_code",
+			"ver": "22.2.11.921"
+		}
+	]
+}

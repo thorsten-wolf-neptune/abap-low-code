@@ -1,0 +1,147 @@
+{
+	"id": "a92bbd10-2281-4f5f-96fe-71028b9fdaee",
+	"createdAt": "2022-02-18T15:10:27.025Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "89f761f3-06b6-4215-9409-c6d7b946ef31",
+			"method": "POST",
+			"path": "/test",
+			"description": "",
+			"parameters": [
+				{
+					"name": "operation",
+					"description": "",
+					"required": false,
+					"inPath": false,
+					"value": "",
+					"default": "",
+					"example": ""
+				}
+			],
+			"headers": [],
+			"responses": [
+				{
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"body": [],
+					"content": [
+						{
+							"id": "596ef62a-5642-4ec5-ec19-ad107d912fc5",
+							"name": "POSTtestResponse",
+							"objectType": "object"
+						}
+					]
+				}
+			],
+			"content": [
+				{
+					"name": "POSTtestRequest",
+					"objectType": "object"
+				}
+			],
+			"serverScript": "d0fe9fd3-69d2-47d8-bda3-4f8660ccbc2e"
+		}
+	],
+	"definitions": [
+		{
+			"id": "8ae0523c-0951-4ea5-8cd3-5938c578f300",
+			"name": "POSTtestRequest",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "5113c6f5-a22d-4165-9770-19d6c2cd5714",
+					"name": "number1",
+					"objectType": "number",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "a78234d7-deec-465e-f564-0c2264a957b5",
+					"name": "number2",
+					"objectType": "number",
+					"description": "",
+					"required": true,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "5002494d-b0ea-4682-dc05-7b70b54dcfd1",
+			"name": "POSTtestResponse",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "c76fb925-0dca-4891-8562-f7c98b7278d9",
+					"name": "result",
+					"objectType": "number",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		}
+	],
+	"documentation": [],
+	"name": "c1_number_add",
+	"endpoint": "/api/serverscript/c1_number_add",
+	"ver": "22.2.18.1511",
+	"version": null,
+	"description": "c1_number_add",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49",
+	"apiGroup": "6f992aa6-25b1-4fe9-89e6-a38b1d6f20cf",
+	"apiFormat": 1,
+	"roles": []
+}

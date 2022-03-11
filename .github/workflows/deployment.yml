@@ -1,0 +1,35 @@
+name: Planet 9 Pipeline
+
+on:
+  push:
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Installing node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - run: npm install
+
+
+
+    - run: npm run deploy
+      env:
+        P9_SERVER_URL: ${{ secrets.CDCI_STAGING_URL }}
+        P9_SERVER_TOKEN: ${{ secrets.CDCI_STAGING_TOKEN }}
+
+    - run: npm run test
+      env:
+        P9_SERVER_URL: ${{ secrets.CDCI_TEST_URL }}
+        P9_SERVER_TOKEN: ${{ secrets.CDCI_TEST_TOKEN }}
