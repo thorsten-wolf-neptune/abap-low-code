@@ -64,7 +64,15 @@
 	"description": "ABAP Low Code Project with Lars Hvam Petersen",
 	"ver": "22.3.11.851",
 	"enableCICD": true,
-	"apps": [],
+	"apps": [
+		{
+			"id": "f11711be-e9f4-4fc8-87b1-bf083cd4fb87",
+			"ver": "22.3.21.1624",
+			"application": "abap_low_code_wolf",
+			"title": "",
+			"description": ""
+		}
+	],
 	"api": [
 		{
 			"id": "6aef0969-cb0f-4da7-b05a-8c0051f4a629",

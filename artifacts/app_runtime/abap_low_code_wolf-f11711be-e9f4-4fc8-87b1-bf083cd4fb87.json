@@ -1,0 +1,959 @@
+{
+	"id": "f11711be-e9f4-4fc8-87b1-bf083cd4fb87",
+	"createdAt": "2022-03-21T15:24:14.095Z",
+	"createdBy": "thorsten.wolf@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "3",
+			"fieldName": "oToolPage",
+			"fieldParent": 0,
+			"fieldType": "sap.tnt.ToolPage",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "4",
+					"fieldName": "oToolHeader",
+					"fieldParent": "3",
+					"fieldType": "sap.tnt.ToolHeader",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "9",
+							"fieldName": "butMenuExpander",
+							"fieldParent": "4",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "tooltip",
+									"grouping": "Properties",
+									"value": "Collapse/expand navigation",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://menu2",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "oToolPage.setSideExpanded(!oToolPage.getSideExpanded());",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "46",
+							"fieldName": "oToolbarSpacer2",
+							"fieldParent": "4",
+							"fieldType": "sap.m.ToolbarSpacer",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "45",
+							"fieldName": "titleToolpage",
+							"fieldParent": "4",
+							"fieldType": "sap.m.Text",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Welcome to my Admin Console",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "19",
+							"fieldName": "oToolbarSpacer",
+							"fieldParent": "4",
+							"fieldType": "sap.m.ToolbarSpacer",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "18",
+							"fieldName": "butUser",
+							"fieldParent": "4",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Transparent",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "My Usename",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "iconFirst",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "icon",
+									"grouping": "Properties",
+									"value": "sap-icon://slim-arrow-down",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "5",
+					"fieldName": "oSideNavigation",
+					"fieldParent": "3",
+					"fieldType": "sap.tnt.SideNavigation",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "6",
+							"fieldName": "oNavigationItem",
+							"fieldParent": "5",
+							"fieldType": "sap.tnt.NavigationList",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setItem",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "7",
+									"fieldName": "oNavigationListItem1",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Home",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://home",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "oApp.to(oPageHome);",
+											"script": "oApp.to(oPageHome);",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "11",
+									"fieldName": "oNavigationListItem2",
+									"fieldParent": "6",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Layout",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://business-objects-experience",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "select",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": [
+												"==OBJECT STRING==",
+												"if (this.getExpanded()) {",
+												"    this.collapse();",
+												"} else {",
+												"    this.expand();",
+												"}"
+											],
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "12",
+											"fieldName": "oNavigationListItem3",
+											"fieldParent": "11",
+											"fieldType": "sap.tnt.NavigationListItem",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Blocklayout",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "select",
+													"grouping": "Events",
+													"value": "oApp.to(oPageBlock);",
+													"script": "oApp.to(oPageBlock);",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "10",
+							"fieldName": "oNavigationFixed",
+							"fieldParent": "5",
+							"fieldType": "sap.tnt.NavigationList",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFixedItem",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "13",
+									"fieldName": "oNavigationListItem4",
+									"fieldParent": "10",
+									"fieldType": "sap.tnt.NavigationListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Item 4",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://chart-table-view",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "14",
+					"fieldName": "oApp",
+					"fieldParent": "3",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "defaultTransitionName",
+							"grouping": "Properties",
+							"value": "show",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "47",
+							"fieldName": "oPageHome",
+							"fieldParent": "14",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showFooter",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "48",
+									"fieldName": "oMessagePage",
+									"fieldParent": "47",
+									"fieldType": "sap.m.MessagePage",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "title",
+											"grouping": "Properties",
+											"value": "Welcome",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Admin Cockpit Template",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://sap-ui5",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "description",
+											"grouping": "Properties",
+											"value": "check out the block layout",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "15",
+							"fieldName": "oPageBlock",
+							"fieldParent": "14",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showFooter",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "20",
+									"fieldName": "oBlock1",
+									"fieldParent": "15",
+									"fieldType": "sap.ui.layout.BlockLayout",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "background",
+											"grouping": "Properties",
+											"value": "Mixed",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "21",
+											"fieldName": "oBlock1Row",
+											"fieldParent": "20",
+											"fieldType": "sap.ui.layout.BlockLayoutRow",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "22",
+													"fieldName": "oBlock1Cell",
+													"fieldParent": "21",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Welcome - Mixed",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "23",
+											"fieldName": "oBlock1Row1",
+											"fieldParent": "20",
+											"fieldType": "sap.ui.layout.BlockLayoutRow",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "24",
+													"fieldName": "oBlock1Cell1",
+													"fieldParent": "23",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "29",
+															"fieldName": "oText11",
+															"fieldParent": "24",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "25",
+													"fieldName": "oBlock1Cell2",
+													"fieldParent": "23",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "30",
+															"fieldName": "oText12",
+															"fieldParent": "25",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "26",
+													"fieldName": "oBlock1Cell3",
+													"fieldParent": "23",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "31",
+															"fieldName": "oText13",
+															"fieldParent": "26",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "27",
+													"fieldName": "oBlock1Cell4",
+													"fieldParent": "23",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "32",
+															"fieldName": "oText14",
+															"fieldParent": "27",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "33",
+									"fieldName": "oBlock2",
+									"fieldParent": "15",
+									"fieldType": "sap.ui.layout.BlockLayout",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "background",
+											"grouping": "Properties",
+											"value": "Accent",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "34",
+											"fieldName": "oBlock2Row",
+											"fieldParent": "33",
+											"fieldType": "sap.ui.layout.BlockLayoutRow",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "35",
+													"fieldName": "oBlock2Cell",
+													"fieldParent": "34",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Welcome - Accent",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "36",
+											"fieldName": "oBlock2Row2",
+											"fieldParent": "33",
+											"fieldType": "sap.ui.layout.BlockLayoutRow",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "37",
+													"fieldName": "oBlock2Cell2",
+													"fieldParent": "36",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "38",
+															"fieldName": "oText2",
+															"fieldParent": "37",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "39",
+													"fieldName": "oBlock2Cell22",
+													"fieldParent": "36",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "40",
+															"fieldName": "oText22",
+															"fieldParent": "39",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "41",
+													"fieldName": "oBlock2Cell3",
+													"fieldParent": "36",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "42",
+															"fieldName": "oText23",
+															"fieldParent": "41",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "43",
+													"fieldName": "oBlock2Cell4",
+													"fieldParent": "36",
+													"fieldType": "sap.ui.layout.BlockLayoutCell",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title",
+															"grouping": "Properties",
+															"value": "Cell 1",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "44",
+															"fieldName": "oText24",
+															"fieldParent": "43",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Some information",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": []
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.3.21.1624",
+	"application": "abap_low_code_wolf",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": true,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": [],
+	"package": "14ea9a2a-af92-4993-b53e-0e02e6b9bd49"
+}
