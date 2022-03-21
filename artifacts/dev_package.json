@@ -11,7 +11,33 @@
 			}
 		],
 		"remote": "https://github.com/thorsten-wolf-neptune/abap-low-code.git",
-		"packageJSON": "",
+		"packageJSON": [
+			"==OBJECT STRING==",
+			"{",
+			"  \"name\": \"abap_low_code\",",
+			"  \"version\": \"1.0.0\",",
+			"  \"description\": \"ABAP Low Code Project with Lars Hvam Petersen\",",
+			"  \"author\": \"Neptune Software\",",
+			"  \"license\": \"LicenseRef-LICENSE\",",
+			"  \"private\": true,",
+			"  \"scripts\": {",
+			"    \"deploy\": \"ts-node src/deploy.ts\",",
+			"    \"test\": \"jest --passWithNoTests\"",
+			"  },",
+			"  \"engines\": {",
+			"    \"node\": \"14.16.0\"",
+			"  },",
+			"  \"devDependencies\": {",
+			"    \"@types/jest\": \"^26.0.23\",",
+			"    \"typescript\": \"^4.2.3\",",
+			"    \"ts-node\": \"^10.0.0\",",
+			"    \"axios\": \"^0.21.1\",",
+			"    \"jest\": \"^27.0.4\",",
+			"    \"ts-jest\": \"^27.0.3\"",
+			"  }",
+			"}",
+			""
+		],
 		"testAPI": [
 			{
 				"id": "9756523c-65dc-4452-bc78-236dcc29818c",
@@ -155,7 +181,7 @@
 		{
 			"id": "de5832b6-2ee7-4c33-9500-8f5e2d1d17cd",
 			"name": "abap_low_code",
-			"description": "ABAP Low Code Project with Lars Hvam Petersen"
+			"description": "TEST new branch ABAP Low Code Project with Lars Hvam Petersen"
 		}
 	],
 	"script_scheduler": [],
